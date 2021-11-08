@@ -1,2 +1,2 @@
 # custom-wc-email
-Custom email for woocommerce
+Custom email for Woocommerce
