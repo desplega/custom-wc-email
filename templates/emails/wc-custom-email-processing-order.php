@@ -66,13 +66,13 @@ do_action('woocommerce_email_header', $email_heading, $email); ?>
                 }
 
                 /**
-                 * Skip if category is "Accesorios"
+                 * Skip if category is "Accesorios de vino"
                  */
                 $accessory = false;
                 $terms = get_the_terms($product->id, 'product_cat');
                 if ($terms) {
                     foreach ($terms as $term) {
-                        if ($term->slug == 'accesorios') {
+                        if ($term->slug == 'accesorios-de-vino') {
                             $accessory = true;
                             break;
                         }

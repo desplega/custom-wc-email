@@ -62,7 +62,7 @@ class WC_Custom_Email_Processing_Order extends WC_Email
             foreach ($items as $item) {
                 $product_id = $item->get_product_id();
                 $categories = $this->get_category_slug($product_id);
-                if (!in_array('accesorios', $categories)) {
+                if (!in_array('accesorios-de-vino', $categories)) {
                     // There should be only one tasting item, so we need to find it.
                     $wine_cellar_emails = get_post_meta($product_id, '_wine_cellar_email', true);
                     if (!empty($wine_cellar_emails)) {
